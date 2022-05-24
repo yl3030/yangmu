@@ -35,6 +35,8 @@ input,textarea {
     border: 0;
 }
 
+.container {}
+
 .color {
     &-main {
         color: $main-color;
@@ -225,7 +227,7 @@ main {
     }
     &-11 {
         width: 32vw;
-        top: -30%;
+        top: -20%;
         left: -4%;
         animation: move-2 10s ease-in-out infinite alternate;
     }
@@ -999,15 +1001,15 @@ main {
             left: 50%;
         }
         &-2 {
-            top: 24%;
+            top: 22.5%;
             left: 32%;
         }
         &-3 {
-            top: 24%;
+            top: 22.5%;
             left: 68%;
         }
         &-4 {
-            top: 48%;
+            top: 45%;
             left: 50%;
         }
     }
@@ -1124,6 +1126,12 @@ main {
 .footer {
     padding: 10px 20px;
     background-color: #E7DECF;
+}
+
+@media screen and (min-width:1400px) {
+    .container {
+        max-width: 1200px;
+    }
 }
 
 @media screen and (max-width:1400px) {

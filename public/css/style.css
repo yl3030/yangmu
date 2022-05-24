@@ -250,7 +250,7 @@ main {
 
 .petal-11 {
   width: 32vw;
-  top: -30%;
+  top: -20%;
   left: -4%;
   -webkit-animation: move-2 10s ease-in-out infinite alternate;
           animation: move-2 10s ease-in-out infinite alternate;
@@ -1502,17 +1502,17 @@ main {
 }
 
 .brand_pic-2 {
-  top: 24%;
+  top: 22.5%;
   left: 32%;
 }
 
 .brand_pic-3 {
-  top: 24%;
+  top: 22.5%;
   left: 68%;
 }
 
 .brand_pic-4 {
-  top: 48%;
+  top: 45%;
   left: 50%;
 }
 
@@ -1665,6 +1665,12 @@ main {
 .footer {
   padding: 10px 20px;
   background-color: #E7DECF;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
