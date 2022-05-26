@@ -650,9 +650,7 @@ main {
 .apply_pic_content.pic-1 {
   width: 60%;
   right: 0;
-  top: 100%;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  top: -27%;
   -webkit-animation: apply-1 4s linear infinite;
           animation: apply-1 4s linear infinite;
 }
@@ -661,6 +659,8 @@ main {
   width: 40%;
   right: 20%;
   top: calc(100% + 15px);
+  -webkit-transform: none;
+          transform: none;
   -webkit-animation: apply-2 4s linear infinite;
           animation: apply-2 4s linear infinite;
 }
@@ -669,6 +669,8 @@ main {
   width: 35%;
   right: calc(60% + 15px);
   top: 60%;
+  -webkit-transform: none;
+          transform: none;
   -webkit-animation: apply-3 4s linear infinite;
           animation: apply-3 4s linear infinite;
 }
@@ -851,51 +853,37 @@ main {
   0% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
   23.3333% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
   33.3333% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
   56.6666% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
   66.6666% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
   90% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
   100% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
 }
 
@@ -903,51 +891,37 @@ main {
   0% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
   23.3333% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
   33.3333% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
   56.6666% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
   66.6666% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
   90% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
   100% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
 }
 
@@ -956,50 +930,37 @@ main {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
   23.3333% {
     width: 40%;
     right: 20%;
+    bottom: 0;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
   33.3333% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
   56.6666% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
   66.6666% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
   90% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
   100% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
 }
 
@@ -1008,50 +969,37 @@ main {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
   23.3333% {
     width: 40%;
     right: 20%;
+    bottom: 0;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
   33.3333% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
   56.6666% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
   66.6666% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
   90% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
   100% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
 }
 
@@ -1060,50 +1008,36 @@ main {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
   23.3333% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
   33.3333% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
   56.6666% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
   66.6666% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
   90% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
   100% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
 }
 
@@ -1112,362 +1046,36 @@ main {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
   23.3333% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
   }
   33.3333% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
   56.6666% {
     width: 60%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    top: -27%;
   }
   66.6666% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
   90% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
   100% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@-webkit-keyframes apply-4 {
-  0% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  23.3333% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  33.3333% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  56.6666% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  66.6666% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  90% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  100% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-}
-
-@keyframes apply-4 {
-  0% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  23.3333% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  33.3333% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  56.6666% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  66.6666% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  90% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  100% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-}
-
-@-webkit-keyframes apply-5 {
-  0% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  23.3333% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  33.3333% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  56.6666% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  66.6666% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  90% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  100% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@keyframes apply-5 {
-  0% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  23.3333% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  33.3333% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  56.6666% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  66.6666% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  90% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  100% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@-webkit-keyframes apply-6 {
-  0% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  23.3333% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  33.3333% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  56.6666% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  66.6666% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  90% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  100% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@keyframes apply-6 {
-  0% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  23.3333% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  33.3333% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  56.6666% {
-    width: 100%;
-    right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  66.6666% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  90% {
-    width: calc(50% - 7.5px);
-    right: 0;
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
-  }
-  100% {
-    width: calc(50% - 7.5px);
-    right: calc(50% + 7.5px);
-    top: calc(100% + 15px);
-    -webkit-transform: none;
-            transform: none;
   }
 }
 
@@ -1677,6 +1285,233 @@ main {
   .apply_petal {
     top: -15%;
   }
+  .apply_pic_content.pic-1 {
+    top: -20%;
+  }
+  @-webkit-keyframes apply-1 {
+    0% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+    23.3333% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+    33.3333% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    56.6666% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    66.6666% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    90% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    100% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+  }
+  @keyframes apply-1 {
+    0% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+    23.3333% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+    33.3333% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    56.6666% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    66.6666% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    90% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    100% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+  }
+  @-webkit-keyframes apply-2 {
+    0% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    23.3333% {
+      width: 40%;
+      right: 20%;
+      bottom: 0;
+      top: calc(100% + 15px);
+    }
+    33.3333% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    56.6666% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    66.6666% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+    90% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+    100% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+  }
+  @keyframes apply-2 {
+    0% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    23.3333% {
+      width: 40%;
+      right: 20%;
+      bottom: 0;
+      top: calc(100% + 15px);
+    }
+    33.3333% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    56.6666% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    66.6666% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+    90% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+    100% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+  }
+  @-webkit-keyframes apply-3 {
+    0% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    23.3333% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    33.3333% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+    56.6666% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+    66.6666% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    90% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    100% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+  }
+  @keyframes apply-3 {
+    0% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    23.3333% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    33.3333% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+    56.6666% {
+      width: 60%;
+      right: 0;
+      top: -20%;
+    }
+    66.6666% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    90% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    100% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+  }
   .brand_text {
     width: 32%;
   }
@@ -1703,6 +1538,233 @@ main {
   }
   .apply_pic {
     height: 250px;
+  }
+  .apply_pic_content.pic-1 {
+    top: -50%;
+  }
+  @-webkit-keyframes apply-1 {
+    0% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+    23.3333% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+    33.3333% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    56.6666% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    66.6666% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    90% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    100% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+  }
+  @keyframes apply-1 {
+    0% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+    23.3333% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+    33.3333% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    56.6666% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    66.6666% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    90% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    100% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+  }
+  @-webkit-keyframes apply-2 {
+    0% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    23.3333% {
+      width: 40%;
+      right: 20%;
+      bottom: 0;
+      top: calc(100% + 15px);
+    }
+    33.3333% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    56.6666% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    66.6666% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+    90% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+    100% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+  }
+  @keyframes apply-2 {
+    0% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    23.3333% {
+      width: 40%;
+      right: 20%;
+      bottom: 0;
+      top: calc(100% + 15px);
+    }
+    33.3333% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    56.6666% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    66.6666% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+    90% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+    100% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+  }
+  @-webkit-keyframes apply-3 {
+    0% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    23.3333% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    33.3333% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+    56.6666% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+    66.6666% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    90% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    100% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+  }
+  @keyframes apply-3 {
+    0% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    23.3333% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    33.3333% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+    56.6666% {
+      width: 60%;
+      right: 0;
+      top: -50%;
+    }
+    66.6666% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    90% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    100% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
   }
   .brand_text {
     width: 35%;
@@ -1765,10 +1827,237 @@ main {
   .apply_pic {
     height: 300px;
   }
+  .apply_pic_content.pic-1 {
+    top: 7%;
+  }
   .apply_petal {
     width: 20vw;
     padding-bottom: calc(20vw * 1.35);
     top: 10%;
+  }
+  @-webkit-keyframes apply-1 {
+    0% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+    23.3333% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+    33.3333% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    56.6666% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    66.6666% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    90% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    100% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+  }
+  @keyframes apply-1 {
+    0% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+    23.3333% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+    33.3333% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    56.6666% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    66.6666% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    90% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    100% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+  }
+  @-webkit-keyframes apply-2 {
+    0% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    23.3333% {
+      width: 40%;
+      right: 20%;
+      bottom: 0;
+      top: calc(100% + 15px);
+    }
+    33.3333% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    56.6666% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    66.6666% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+    90% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+    100% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+  }
+  @keyframes apply-2 {
+    0% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    23.3333% {
+      width: 40%;
+      right: 20%;
+      bottom: 0;
+      top: calc(100% + 15px);
+    }
+    33.3333% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    56.6666% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    66.6666% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+    90% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+    100% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+  }
+  @-webkit-keyframes apply-3 {
+    0% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    23.3333% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    33.3333% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+    56.6666% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+    66.6666% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    90% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    100% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+  }
+  @keyframes apply-3 {
+    0% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    23.3333% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
+    33.3333% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+    56.6666% {
+      width: 60%;
+      right: 0;
+      top: 7%;
+    }
+    66.6666% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    90% {
+      width: 40%;
+      right: 20%;
+      top: calc(100% + 15px);
+    }
+    100% {
+      width: 35%;
+      right: calc(60% + 15px);
+      top: 60%;
+    }
   }
   .brand_text {
     width: 100%;
@@ -1867,25 +2156,17 @@ main {
   .apply_pic_content.pic-1 {
     width: 100%;
     right: 0;
-    top: 100%;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    -webkit-animation: apply-4 4s linear infinite;
-            animation: apply-4 4s linear infinite;
+    top: 0;
   }
   .apply_pic_content.pic-2 {
     width: calc(50% - 7.5px);
     right: 0;
     top: calc(100% + 15px);
-    -webkit-animation: apply-5 4s linear infinite;
-            animation: apply-5 4s linear infinite;
   }
   .apply_pic_content.pic-3 {
     width: calc(50% - 7.5px);
     right: calc(50% + 7.5px);
     top: calc(100% + 15px);
-    -webkit-animation: apply-6 4s linear infinite;
-            animation: apply-6 4s linear infinite;
   }
   .apply_pic_inner {
     border-radius: 0;
@@ -1910,6 +2191,228 @@ main {
   .apply_petal {
     width: 25vw;
     padding-bottom: calc(25vw * 1.35);
+  }
+  @-webkit-keyframes apply-1 {
+    0% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+    23.3333% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+    33.3333% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+    56.6666% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+    66.6666% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+    90% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+    100% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+  }
+  @keyframes apply-1 {
+    0% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+    23.3333% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+    33.3333% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+    56.6666% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+    66.6666% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+    90% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+    100% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+  }
+  @-webkit-keyframes apply-2 {
+    0% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+    23.3333% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+    33.3333% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+    56.6666% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+    66.6666% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+    90% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+    100% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+  }
+  @keyframes apply-2 {
+    0% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+    23.3333% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+    33.3333% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+    56.6666% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+    66.6666% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+    90% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+    100% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+  }
+  @-webkit-keyframes apply-3 {
+    0% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+    23.3333% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+    33.3333% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+    56.6666% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+    66.6666% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+    90% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+    100% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+  }
+  @keyframes apply-3 {
+    0% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+    23.3333% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
+    33.3333% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+    56.6666% {
+      width: 100%;
+      right: 0;
+      top: 0;
+    }
+    66.6666% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+    90% {
+      width: calc(50% - 7.5px);
+      right: 0;
+      top: calc(100% + 15px);
+    }
+    100% {
+      width: calc(50% - 7.5px);
+      right: calc(50% + 7.5px);
+      top: calc(100% + 15px);
+    }
   }
   .brand_text {
     width: 100%;
