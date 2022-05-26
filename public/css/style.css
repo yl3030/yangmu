@@ -640,6 +640,56 @@ main {
           animation: large 6s ease-out 0.3s 1;
 }
 
+.map_floor_popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  z-index: 30;
+  display: none;
+}
+
+.map_floor_popup_pic {
+  width: 22vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.map_floor_popup_arrow {
+  position: absolute;
+  width: 30px;
+  top: 50%;
+  cursor: pointer;
+}
+
+.map_floor_popup_arrow path {
+  fill: #9A6525;
+}
+
+.map_floor_popup_arrow.prev {
+  left: 40px;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+}
+
+.map_floor_popup_arrow.next {
+  right: 40px;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+
+.map_floor_popup_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .apply {
   margin-bottom: 450px;
 }
@@ -670,8 +720,8 @@ main {
   width: 60%;
   right: 0;
   top: -27%;
-  -webkit-animation: apply-1 6.5s ease-out infinite;
-          animation: apply-1 6.5s ease-out infinite;
+  -webkit-animation: apply-1 16.5s ease-out infinite;
+          animation: apply-1 16.5s ease-out infinite;
 }
 
 .apply_pic_content.pic-2 {
@@ -680,8 +730,8 @@ main {
   top: calc(100% + 15px);
   -webkit-transform: none;
           transform: none;
-  -webkit-animation: apply-2 6.5s ease-out infinite;
-          animation: apply-2 6.5s ease-out infinite;
+  -webkit-animation: apply-2 16.5s ease-out infinite;
+          animation: apply-2 16.5s ease-out infinite;
 }
 
 .apply_pic_content.pic-3 {
@@ -690,8 +740,8 @@ main {
   top: 60%;
   -webkit-transform: none;
           transform: none;
-  -webkit-animation: apply-3 6.5s ease-out infinite;
-          animation: apply-3 6.5s ease-out infinite;
+  -webkit-animation: apply-3 16.5s ease-out infinite;
+          animation: apply-3 16.5s ease-out infinite;
 }
 
 .apply_pic_content img {
@@ -874,7 +924,7 @@ main {
     right: 0;
     top: -27%;
   }
-  23.3333% {
+  30.3333% {
     width: 60%;
     right: 0;
     top: -27%;
@@ -884,7 +934,7 @@ main {
     right: 20%;
     top: calc(100% + 15px);
   }
-  56.6666% {
+  63.6666% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
@@ -894,7 +944,7 @@ main {
     right: calc(60% + 15px);
     top: 60%;
   }
-  90% {
+  97% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
@@ -912,7 +962,7 @@ main {
     right: 0;
     top: -27%;
   }
-  23.3333% {
+  30.3333% {
     width: 60%;
     right: 0;
     top: -27%;
@@ -922,7 +972,7 @@ main {
     right: 20%;
     top: calc(100% + 15px);
   }
-  56.6666% {
+  63.6666% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
@@ -932,7 +982,7 @@ main {
     right: calc(60% + 15px);
     top: 60%;
   }
-  90% {
+  97% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
@@ -950,7 +1000,7 @@ main {
     right: 20%;
     top: calc(100% + 15px);
   }
-  23.3333% {
+  30.3333% {
     width: 40%;
     right: 20%;
     bottom: 0;
@@ -961,7 +1011,7 @@ main {
     right: calc(60% + 15px);
     top: 60%;
   }
-  56.6666% {
+  63.6666% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
@@ -971,7 +1021,7 @@ main {
     right: 0;
     top: -27%;
   }
-  90% {
+  97% {
     width: 60%;
     right: 0;
     top: -27%;
@@ -989,7 +1039,7 @@ main {
     right: 20%;
     top: calc(100% + 15px);
   }
-  23.3333% {
+  30.3333% {
     width: 40%;
     right: 20%;
     bottom: 0;
@@ -1000,7 +1050,7 @@ main {
     right: calc(60% + 15px);
     top: 60%;
   }
-  56.6666% {
+  63.6666% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
@@ -1010,7 +1060,7 @@ main {
     right: 0;
     top: -27%;
   }
-  90% {
+  97% {
     width: 60%;
     right: 0;
     top: -27%;
@@ -1028,7 +1078,7 @@ main {
     right: calc(60% + 15px);
     top: 60%;
   }
-  23.3333% {
+  30.3333% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
@@ -1038,7 +1088,7 @@ main {
     right: 0;
     top: -27%;
   }
-  56.6666% {
+  63.6666% {
     width: 60%;
     right: 0;
     top: -27%;
@@ -1048,7 +1098,7 @@ main {
     right: 20%;
     top: calc(100% + 15px);
   }
-  90% {
+  97% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
@@ -1066,7 +1116,7 @@ main {
     right: calc(60% + 15px);
     top: 60%;
   }
-  23.3333% {
+  30.3333% {
     width: 35%;
     right: calc(60% + 15px);
     top: 60%;
@@ -1076,7 +1126,7 @@ main {
     right: 0;
     top: -27%;
   }
-  56.6666% {
+  63.6666% {
     width: 60%;
     right: 0;
     top: -27%;
@@ -1086,7 +1136,7 @@ main {
     right: 20%;
     top: calc(100% + 15px);
   }
-  90% {
+  97% {
     width: 40%;
     right: 20%;
     top: calc(100% + 15px);
@@ -1296,7 +1346,7 @@ main {
 
 .fix-side {
   position: fixed;
-  width: 45px;
+  width: 58px;
   right: 40px;
   bottom: 10vw;
   z-index: 10;
@@ -1309,7 +1359,7 @@ main {
 
 .fix-side li {
   width: 100%;
-  height: 60px;
+  height: 63px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   background-color: #9A6525;
@@ -1323,15 +1373,20 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  position: relative;
 }
 
 .fix-side li a img {
@@ -1347,12 +1402,22 @@ main {
 }
 
 .fix-side li a span {
-  display: none;
   text-align: center;
   margin-top: 3px;
   width: 100%;
   color: #fff;
   font-size: 12px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fix-side li a.icon_place:hover span {
+  opacity: 1;
 }
 
 .fix-side li:first-child {
@@ -1929,7 +1994,7 @@ main {
       right: 0;
       top: 7%;
     }
-    23.3333% {
+    30.3333% {
       width: 60%;
       right: 0;
       top: 7%;
@@ -1939,7 +2004,7 @@ main {
       right: 20%;
       top: calc(100% + 15px);
     }
-    56.6666% {
+    63.6666% {
       width: 40%;
       right: 20%;
       top: calc(100% + 15px);
@@ -1949,7 +2014,7 @@ main {
       right: calc(60% + 15px);
       top: 60%;
     }
-    90% {
+    97% {
       width: 35%;
       right: calc(60% + 15px);
       top: 60%;
@@ -1966,7 +2031,7 @@ main {
       right: 0;
       top: 7%;
     }
-    23.3333% {
+    30.3333% {
       width: 60%;
       right: 0;
       top: 7%;
@@ -1976,7 +2041,7 @@ main {
       right: 20%;
       top: calc(100% + 15px);
     }
-    56.6666% {
+    63.6666% {
       width: 40%;
       right: 20%;
       top: calc(100% + 15px);
@@ -1986,7 +2051,7 @@ main {
       right: calc(60% + 15px);
       top: 60%;
     }
-    90% {
+    97% {
       width: 35%;
       right: calc(60% + 15px);
       top: 60%;
@@ -2003,7 +2068,7 @@ main {
       right: 20%;
       top: calc(100% + 15px);
     }
-    23.3333% {
+    30.3333% {
       width: 40%;
       right: 20%;
       bottom: 0;
@@ -2014,7 +2079,7 @@ main {
       right: calc(60% + 15px);
       top: 60%;
     }
-    56.6666% {
+    63.6666% {
       width: 35%;
       right: calc(60% + 15px);
       top: 60%;
@@ -2024,7 +2089,7 @@ main {
       right: 0;
       top: 7%;
     }
-    90% {
+    97% {
       width: 60%;
       right: 0;
       top: 7%;
@@ -2041,7 +2106,7 @@ main {
       right: 20%;
       top: calc(100% + 15px);
     }
-    23.3333% {
+    30.3333% {
       width: 40%;
       right: 20%;
       bottom: 0;
@@ -2052,7 +2117,7 @@ main {
       right: calc(60% + 15px);
       top: 60%;
     }
-    56.6666% {
+    63.6666% {
       width: 35%;
       right: calc(60% + 15px);
       top: 60%;
@@ -2062,7 +2127,7 @@ main {
       right: 0;
       top: 7%;
     }
-    90% {
+    97% {
       width: 60%;
       right: 0;
       top: 7%;
@@ -2079,7 +2144,7 @@ main {
       right: calc(60% + 15px);
       top: 60%;
     }
-    23.3333% {
+    30.3333% {
       width: 35%;
       right: calc(60% + 15px);
       top: 60%;
@@ -2089,7 +2154,7 @@ main {
       right: 0;
       top: 7%;
     }
-    56.6666% {
+    63.6666% {
       width: 60%;
       right: 0;
       top: 7%;
@@ -2099,7 +2164,7 @@ main {
       right: 20%;
       top: calc(100% + 15px);
     }
-    90% {
+    97% {
       width: 40%;
       right: 20%;
       top: calc(100% + 15px);
@@ -2116,7 +2181,7 @@ main {
       right: calc(60% + 15px);
       top: 60%;
     }
-    23.3333% {
+    30.3333% {
       width: 35%;
       right: calc(60% + 15px);
       top: 60%;
@@ -2126,7 +2191,7 @@ main {
       right: 0;
       top: 7%;
     }
-    56.6666% {
+    63.6666% {
       width: 60%;
       right: 0;
       top: 7%;
@@ -2136,7 +2201,7 @@ main {
       right: 20%;
       top: calc(100% + 15px);
     }
-    90% {
+    97% {
       width: 40%;
       right: 20%;
       top: calc(100% + 15px);
@@ -2231,7 +2296,14 @@ main {
     width: 20px;
   }
   .fix-side ul li a span {
-    display: block;
+    opacity: 1;
+    position: static;
+  }
+  .fix-side ul li a.icon_place:hover span {
+    opacity: 1;
+  }
+  .map_floor_popup_pic {
+    width: 40vw;
   }
 }
 
@@ -2278,6 +2350,12 @@ main {
   }
   .map_floor_pic {
     width: 33.3333%;
+  }
+  .map_floor_pic:nth-child(1) {
+    width: 34%;
+  }
+  .map_floor_pic:nth-child(2) {
+    width: 34%;
   }
   .apply_pic {
     position: relative;
@@ -2330,7 +2408,7 @@ main {
       right: 0;
       top: 0;
     }
-    23.3333% {
+    30.3333% {
       width: 100%;
       right: 0;
       top: 0;
@@ -2340,7 +2418,7 @@ main {
       right: 0;
       top: calc(100% + 15px);
     }
-    56.6666% {
+    63.6666% {
       width: calc(50% - 7.5px);
       right: 0;
       top: calc(100% + 15px);
@@ -2350,7 +2428,7 @@ main {
       right: calc(50% + 7.5px);
       top: calc(100% + 15px);
     }
-    90% {
+    97% {
       width: calc(50% - 7.5px);
       right: calc(50% + 7.5px);
       top: calc(100% + 15px);
@@ -2367,7 +2445,7 @@ main {
       right: 0;
       top: 0;
     }
-    23.3333% {
+    30.3333% {
       width: 100%;
       right: 0;
       top: 0;
@@ -2377,7 +2455,7 @@ main {
       right: 0;
       top: calc(100% + 15px);
     }
-    56.6666% {
+    63.6666% {
       width: calc(50% - 7.5px);
       right: 0;
       top: calc(100% + 15px);
@@ -2387,7 +2465,7 @@ main {
       right: calc(50% + 7.5px);
       top: calc(100% + 15px);
     }
-    90% {
+    97% {
       width: calc(50% - 7.5px);
       right: calc(50% + 7.5px);
       top: calc(100% + 15px);
@@ -2404,7 +2482,7 @@ main {
       right: 0;
       top: calc(100% + 15px);
     }
-    23.3333% {
+    30.3333% {
       width: calc(50% - 7.5px);
       right: 0;
       top: calc(100% + 15px);
@@ -2414,7 +2492,7 @@ main {
       right: calc(50% + 7.5px);
       top: calc(100% + 15px);
     }
-    56.6666% {
+    63.6666% {
       width: calc(50% - 7.5px);
       right: calc(50% + 7.5px);
       top: calc(100% + 15px);
@@ -2424,7 +2502,7 @@ main {
       right: 0;
       top: 0;
     }
-    90% {
+    97% {
       width: 100%;
       right: 0;
       top: 0;
@@ -2441,7 +2519,7 @@ main {
       right: 0;
       top: calc(100% + 15px);
     }
-    23.3333% {
+    30.3333% {
       width: calc(50% - 7.5px);
       right: 0;
       top: calc(100% + 15px);
@@ -2451,7 +2529,7 @@ main {
       right: calc(50% + 7.5px);
       top: calc(100% + 15px);
     }
-    56.6666% {
+    63.6666% {
       width: calc(50% - 7.5px);
       right: calc(50% + 7.5px);
       top: calc(100% + 15px);
@@ -2461,7 +2539,7 @@ main {
       right: 0;
       top: 0;
     }
-    90% {
+    97% {
       width: 100%;
       right: 0;
       top: 0;
@@ -2478,7 +2556,7 @@ main {
       right: calc(50% + 7.5px);
       top: calc(100% + 15px);
     }
-    23.3333% {
+    30.3333% {
       width: calc(50% - 7.5px);
       right: calc(50% + 7.5px);
       top: calc(100% + 15px);
@@ -2488,7 +2566,7 @@ main {
       right: 0;
       top: 0;
     }
-    56.6666% {
+    63.6666% {
       width: 100%;
       right: 0;
       top: 0;
@@ -2498,7 +2576,7 @@ main {
       right: 0;
       top: calc(100% + 15px);
     }
-    90% {
+    97% {
       width: calc(50% - 7.5px);
       right: 0;
       top: calc(100% + 15px);
@@ -2515,7 +2593,7 @@ main {
       right: calc(50% + 7.5px);
       top: calc(100% + 15px);
     }
-    23.3333% {
+    30.3333% {
       width: calc(50% - 7.5px);
       right: calc(50% + 7.5px);
       top: calc(100% + 15px);
@@ -2525,7 +2603,7 @@ main {
       right: 0;
       top: 0;
     }
-    56.6666% {
+    63.6666% {
       width: 100%;
       right: 0;
       top: 0;
@@ -2535,7 +2613,7 @@ main {
       right: 0;
       top: calc(100% + 15px);
     }
-    90% {
+    97% {
       width: calc(50% - 7.5px);
       right: 0;
       top: calc(100% + 15px);
@@ -2811,6 +2889,18 @@ main {
     right: -20%;
     bottom: 0100%;
     z-index: 10;
+  }
+  .map_floor_popup_pic {
+    width: 60vw;
+  }
+  .map_floor_popup_arrow {
+    width: 25px;
+  }
+  .map_floor_popup_arrow.prev {
+    left: 20px;
+  }
+  .map_floor_popup_arrow.next {
+    right: 20px;
   }
 }
 

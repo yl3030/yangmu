@@ -112,24 +112,13 @@
                         </h2>
                         <span class="map_alert">本傢俱配置僅供參考，實際以合約附圖為準</span>
                     </div>
-                    <div class="map_floor d-md-flex d-none flex-wrap mb-5">
+                    <div class="map_floor d-flex flex-wrap mb-5">
                         <img class="map_floor_pic" src="./public/img/floor-1.png" alt="">
                         <img class="map_floor_pic" src="./public/img/floor-2.png" alt="">
-                        <img class="map_floor_pic" src="./public/img/floor-3.png" alt="">
-                        <img class="map_floor_pic" src="./public/img/floor-4.png" alt="">
-                        <img class="map_floor_pic" src="./public/img/floor-5.png" alt="">
+                        <img class="map_floor_pic mt-md-0 mt-3" src="./public/img/floor-3.png" alt="">
+                        <img class="map_floor_pic mt-md-0 mt-3" src="./public/img/floor-4.png" alt="">
+                        <img class="map_floor_pic mt-md-0 mt-3" src="./public/img/floor-5.png" alt="">
                     </div>
-                    <div class="map_floor d-md-none d-flex flex-wrap mb-2">
-                        <img class="map_floor_pic" src="./public/img/floor-1.png" alt="">
-                        <img class="map_floor_pic" src="./public/img/floor-2.png" alt="">
-                    </div>
-                    <div class="map_floor d-md-none d-flex flex-wrap mb-5">
-                        <img class="map_floor_pic" src="./public/img/floor-3.png" alt="">
-                        <img class="map_floor_pic" src="./public/img/floor-4.png" alt="">
-                        <img class="map_floor_pic" src="./public/img/floor-5.png" alt="">
-                    </div>
-                    <!-- <img class="map_pic w-100 d-md-block d-none mb-5" src="./public/img/map.png" alt="" data-aos="fade" data-aos-duration="1000" data-aos-delay="250"> -->
-                    <!-- <img class="map_pic w-100 d-md-none d-block" src="./public/img/map-m.png" alt="" data-aos="fade" data-aos-duration="1000" data-aos-delay="250"> -->
                     <div class="map_intro row">
                         <div class="col-md-6 pe-lg-5 pe-md-4">
                             <ul data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
@@ -263,6 +252,12 @@
                 </div>
 
             </div>
+        </div>
+        <div class="map_floor_popup">
+            <div class="map_floor_popup_bg"></div>
+            <svg class="map_floor_popup_arrow prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.46 19.42"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="圖層_2" data-name="圖層 2"><g id="字2"><path class="cls-1" d="M16.94,7.47,10,.52A1.81,1.81,0,0,0,8.73,0,1.78,1.78,0,0,0,7.47.52l-6.95,7A1.8,1.8,0,0,0,.52,10a1.8,1.8,0,0,0,2.53,0L7,6.1V17.63a1.79,1.79,0,1,0,3.57,0V6.1L14.41,10a1.8,1.8,0,0,0,2.53,0A1.79,1.79,0,0,0,16.94,7.47Z"/></g></g></svg>
+            <img class="map_floor_popup_pic" src="" alt="">
+            <svg class="map_floor_popup_arrow next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.46 19.42"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="圖層_2" data-name="圖層 2"><g id="字2"><path class="cls-1" d="M16.94,7.47,10,.52A1.81,1.81,0,0,0,8.73,0,1.78,1.78,0,0,0,7.47.52l-6.95,7A1.8,1.8,0,0,0,.52,10a1.8,1.8,0,0,0,2.53,0L7,6.1V17.63a1.79,1.79,0,1,0,3.57,0V6.1L14.41,10a1.8,1.8,0,0,0,2.53,0A1.79,1.79,0,0,0,16.94,7.47Z"/></g></g></svg>
         </div>
         <div class="material" id="material">
             <div class="brand position-relative">
@@ -418,7 +413,7 @@
             <div class="inform">
                 <div class="container">
                     <h3 class="title-inform color-sixth" data-aos="fade-down" data-aos-duration="1000">建案資訊</h3>
-                    <div class="row">
+                    <div class="row d-md-flex d-none">
                         <div class="col-md-6">
                             <div class="d-flex flex-wrap align-items-center inform_item" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                                 <span class="color-sixth">投資興建</span>
@@ -446,6 +441,34 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row d-md-none d-flex">
+                        <div class="col-md-6">
+                            <div class="d-flex flex-wrap align-items-center inform_item" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                                <span class="color-sixth">投資興建</span>
+                                <span class="color-forth">滸霖開發建設</span>
+                            </div>
+                            <div class="d-flex flex-wrap align-items-center inform_item" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                                <span class="color-sixth">戶數規劃</span>
+                                <span class="color-forth">14戶</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="d-flex flex-wrap align-items-center inform_item" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+                                <span class="color-sixth">基地位置</span>
+                                <span class="color-forth">桃園市新屋區新華路一段786巷</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex flex-wrap align-items-center inform_item" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                                <span class="color-sixth">建築規劃</span>
+                                <span class="color-forth">錢廷凱建築師事務所</span>
+                            </div>
+                            <div class="d-flex flex-wrap align-items-center inform_item" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                                <span class="color-sixth">樓層規劃</span>
+                                <span class="color-forth">地上4層</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -453,19 +476,19 @@
     <div class="fix-side">
         <ul class="container">
             <li>
-                <a href="https://www.facebook.com/%E6%98%95%E6%B2%B3-106453121968403" target="_blank">
+                <a href="https://www.facebook.com/%E6%BB%B8%E9%9C%96-%E4%BB%B0%E6%B2%90-104623542183684​" target="_blank">
                     <img class="icon-fb" src="./public/img/icon_fb.svg" alt="">
                     <span>臉書專頁</span>
                 </a>
             </li>
             <li>
-                <a href="https://goo.gl/maps/ib7nv3BfuZjFU8hL6" target="_blank">
+                <a class="icon_place" href="https://goo.gl/maps/T7vpuE6T6VPYAqbF7" target="_blank">
                     <img src="./public/img/icon_pin.svg" alt="">
                     <span>接待會館</span>
                 </a>
             </li>
             <li>
-                <a href="https://goo.gl/maps/5bGniyo7DuLgA71f7" target="_blank">
+                <a class="icon_place" href="https://goo.gl/maps/5bGniyo7DuLgA71f7" target="_blank">
                     <img src="./public/img/icon_home.svg" alt="">
                     <span>基地位置</span>
                 </a>

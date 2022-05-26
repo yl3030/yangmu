@@ -529,6 +529,46 @@ main {
                 animation: large 6s ease-out 0.3s 1;
             }
         }
+        &_popup {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            z-index: 30;
+            display: none;
+            &_pic {
+                width: 22vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            &_arrow {
+                position: absolute;
+                width: 30px;
+                top: 50%;
+                cursor: pointer;
+                path {
+                    fill: $second-color;
+                }
+                &.prev {
+                    left: 40px;
+                    transform: translateY(-50%) rotate(-90deg);
+                }
+                &.next {
+                    right: 40px;
+                    transform: translateY(-50%) rotate(90deg);
+                }
+            }
+            &_bg {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+        }
     }
 }
 
@@ -558,7 +598,7 @@ main {
                     width: 60%;
                     right: 0;
                     top: -27%;
-                    animation: apply-1 6.5s ease-out infinite;
+                    animation: apply-1 16.5s ease-out infinite;
                 }
                 &-2 {
                     width: 40%;
@@ -566,14 +606,14 @@ main {
                     top: calc(100% + 15px);
                     transform: none;
                     // bottom: calc(-85% - 15px);
-                    animation: apply-2 6.5s ease-out infinite;
+                    animation: apply-2 16.5s ease-out infinite;
                 }
                 &-3 {
                     width: 35%;
                     right: calc(60% + 15px);
                     top: 60%;
                     transform: none;
-                    animation: apply-3 6.5s ease-out infinite;
+                    animation: apply-3 16.5s ease-out infinite;
                 }
             }
             img {
@@ -731,7 +771,7 @@ main {
         right: 0;
         top: -27%;
     }
-    23.3333% {
+    30.3333% {
         width: 60%;
         right: 0;
         top: -27%;
@@ -741,7 +781,7 @@ main {
         right: 20%;
         top: calc(100% + 15px);
     }
-    56.6666% {
+    63.6666% {
         width: 40%;
         right: 20%;
         top: calc(100% + 15px);
@@ -751,7 +791,7 @@ main {
         right: calc(60% + 15px);
         top: 60%;
     }
-    90% {
+    97% {
         width: 35%;
         right: calc(60% + 15px);
         top: 60%;
@@ -769,7 +809,7 @@ main {
         right: 20%;
         top: calc(100% + 15px);
     }
-    23.3333% {
+    30.3333% {
         width: 40%;
         right: 20%;
         bottom: 0;
@@ -780,7 +820,7 @@ main {
         right: calc(60% + 15px);
         top: 60%;
     }
-    56.6666% {
+    63.6666% {
         width: 35%;
         right: calc(60% + 15px);
         top: 60%;
@@ -790,7 +830,7 @@ main {
         right: 0;
         top: -27%;
     }
-    90% {
+    97% {
         width: 60%;
         right: 0;
         top: -27%;
@@ -808,7 +848,7 @@ main {
         right: calc(60% + 15px);
         top: 60%;
     }
-    23.3333% {
+    30.3333% {
         width: 35%;
         right: calc(60% + 15px);
         top: 60%;
@@ -818,7 +858,7 @@ main {
         right: 0;
         top: -27%;
     }
-    56.6666% {
+    63.6666% {
         width: 60%;
         right: 0;
         top: -27%;
@@ -828,7 +868,7 @@ main {
         right: 20%;
         top: calc(100% + 15px);
     }
-    90% {
+    97% {
         width: 40%;
         right: 20%;
         top: calc(100% + 15px);
@@ -992,7 +1032,7 @@ main {
 
 .fix-side {
     position: fixed;
-    width: 45px;
+    width: 58px;
     right: 40px;
     bottom: 10vw;
     z-index: 10;
@@ -1002,7 +1042,7 @@ main {
     }
     li {
         width: 100%;
-        height: 60px;
+        height: 63px;
         box-shadow: 0 0 2px rgba(0,0,0,0.2);
         background-color: $second-color;
         transition: $transition-main;
@@ -1010,10 +1050,13 @@ main {
             width: 100%;
             height: 100%;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            align-content: center;
             cursor: pointer;
             transition: $transition-main;
+            position: relative;
             img {
                 width: 35%;
                 &.icon-fb {
@@ -1024,12 +1067,24 @@ main {
                 opacity: 0.7;
             }
             span {
-                display: none;
                 text-align: center;
                 margin-top: 3px;
                 width: 100%;
                 color: #fff;
                 font-size: 12px;
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+                transition: $transition-main;
+            }
+            &.icon_place {
+                &:hover {
+                    span {
+                        opacity: 1;
+                    }
+                }
             }
         }
         &:hover {
@@ -1419,7 +1474,7 @@ main {
             right: 0;
             top: 7%;
         }
-        23.3333% {
+        30.3333% {
             width: 60%;
             right: 0;
             top: 7%;
@@ -1429,7 +1484,7 @@ main {
             right: 20%;
             top: calc(100% + 15px);
         }
-        56.6666% {
+        63.6666% {
             width: 40%;
             right: 20%;
             top: calc(100% + 15px);
@@ -1439,7 +1494,7 @@ main {
             right: calc(60% + 15px);
             top: 60%;
         }
-        90% {
+        97% {
             width: 35%;
             right: calc(60% + 15px);
             top: 60%;
@@ -1457,7 +1512,7 @@ main {
             right: 20%;
             top: calc(100% + 15px);
         }
-        23.3333% {
+        30.3333% {
             width: 40%;
             right: 20%;
             bottom: 0;
@@ -1468,7 +1523,7 @@ main {
             right: calc(60% + 15px);
             top: 60%;
         }
-        56.6666% {
+        63.6666% {
             width: 35%;
             right: calc(60% + 15px);
             top: 60%;
@@ -1478,7 +1533,7 @@ main {
             right: 0;
             top: 7%;
         }
-        90% {
+        97% {
             width: 60%;
             right: 0;
             top: 7%;
@@ -1496,7 +1551,7 @@ main {
             right: calc(60% + 15px);
             top: 60%;
         }
-        23.3333% {
+        30.3333% {
             width: 35%;
             right: calc(60% + 15px);
             top: 60%;
@@ -1506,7 +1561,7 @@ main {
             right: 0;
             top: 7%;
         }
-        56.6666% {
+        63.6666% {
             width: 60%;
             right: 0;
             top: 7%;
@@ -1516,7 +1571,7 @@ main {
             right: 20%;
             top: calc(100% + 15px);
         }
-        90% {
+        97% {
             width: 40%;
             right: 20%;
             top: calc(100% + 15px);
@@ -1605,8 +1660,25 @@ main {
                         }
                     }
                     span {
-                        display: block;
+                        opacity: 1;
+                        position: static;
                     }
+                    &.icon_place {
+                        &:hover {
+                            span {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .map {
+        &_floor {
+            &_popup {
+                &_pic {
+                    width: 40vw;
                 }
             }
         }
@@ -1665,6 +1737,12 @@ main {
             justify-content: center;
             &_pic {
                 width: 33.3333%;
+                &:nth-child(1) {
+                    width: 34%;
+                }
+                &:nth-child(2) {
+                    width: 34%;
+                }
             }
         }
     }
@@ -1724,7 +1802,7 @@ main {
             right: 0;
             top: 0;
         }
-        23.3333% {
+        30.3333% {
             width: 100%;
             right: 0;
             top: 0;
@@ -1734,7 +1812,7 @@ main {
             right: 0;
             top: calc(100% + 15px);
         }
-        56.6666% {
+        63.6666% {
             width: calc(50% - 7.5px);
             right: 0;
             top: calc(100% + 15px);
@@ -1744,7 +1822,7 @@ main {
             right: calc(50% + 7.5px);
             top: calc(100% + 15px);
         }
-        90% {
+        97% {
             width: calc(50% - 7.5px);
             right: calc(50% + 7.5px);
             top: calc(100% + 15px);
@@ -1762,7 +1840,7 @@ main {
             right: 0;
             top: calc(100% + 15px);
         }
-        23.3333% {
+        30.3333% {
             width: calc(50% - 7.5px);
             right: 0;
             top: calc(100% + 15px);
@@ -1772,7 +1850,7 @@ main {
             right: calc(50% + 7.5px);
             top: calc(100% + 15px);
         }
-        56.6666% {
+        63.6666% {
             width: calc(50% - 7.5px);
             right: calc(50% + 7.5px);
             top: calc(100% + 15px);
@@ -1782,7 +1860,7 @@ main {
             right: 0;
             top: 0;
         }
-        90% {
+        97% {
             width: 100%;
             right: 0;
             top: 0;
@@ -1800,7 +1878,7 @@ main {
             right: calc(50% + 7.5px);
             top: calc(100% + 15px);
         }
-        23.3333% {
+        30.3333% {
             width: calc(50% - 7.5px);
             right: calc(50% + 7.5px);
             top: calc(100% + 15px);
@@ -1810,7 +1888,7 @@ main {
             right: 0;
             top: 0;
         }
-        56.6666% {
+        63.6666% {
             width: 100%;
             right: 0;
             top: 0;
@@ -1820,7 +1898,7 @@ main {
             right: 0;
             top: calc(100% + 15px);
         }
-        90% {
+        97% {
             width: calc(50% - 7.5px);
             right: 0;
             top: calc(100% + 15px);
@@ -2134,6 +2212,24 @@ main {
             right: -20%;
             bottom: 0100%;
             z-index: 10;
+        }
+    }
+    .map {
+        &_floor {
+            &_popup {
+                &_pic {
+                    width: 60vw;
+                }
+                &_arrow {
+                    width: 25px;
+                    &.prev {
+                        left: 20px;
+                    }
+                    &.next {
+                        right: 20px;
+                    }
+                }
+            }
         }
     }
 }
