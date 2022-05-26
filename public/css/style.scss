@@ -438,6 +438,14 @@ main {
                     left: 0;
                     object-fit: cover;
                 }
+                p {
+                    position: absolute;
+                    margin: 0;
+                    color: #fff;
+                    bottom: 15px;
+                    left: 20px;
+                    font-weight: 300;
+                }
             }
             &-pagination {
                 &-bullets {
@@ -619,10 +627,19 @@ main {
             img {
                 width: 100%;
             }
+            p {
+                position: absolute;
+                margin: 0;
+                color: #fff;
+                right: 15px;
+                bottom: 10px;
+                font-weight: 300;
+            }
         }
         &_inner {
             border-radius: 10px;
             overflow: hidden;
+            position: relative;
         }
     }
     &_petal {
@@ -1033,7 +1050,7 @@ main {
 .fix-side {
     position: fixed;
     width: 58px;
-    right: 40px;
+    right: 30px;
     bottom: 10vw;
     z-index: 10;
     .container {

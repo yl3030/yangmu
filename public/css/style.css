@@ -525,6 +525,15 @@ main {
      object-fit: cover;
 }
 
+.beautiful_swiper .swiper-slide p {
+  position: absolute;
+  margin: 0;
+  color: #fff;
+  bottom: 15px;
+  left: 20px;
+  font-weight: 300;
+}
+
 .beautiful_swiper .swiper-pagination-bullets {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -748,9 +757,19 @@ main {
   width: 100%;
 }
 
+.apply_pic_content p {
+  position: absolute;
+  margin: 0;
+  color: #fff;
+  right: 15px;
+  bottom: 10px;
+  font-weight: 300;
+}
+
 .apply_pic_inner {
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
 }
 
 .apply_petal {
@@ -1347,7 +1366,7 @@ main {
 .fix-side {
   position: fixed;
   width: 58px;
-  right: 40px;
+  right: 30px;
   bottom: 10vw;
   z-index: 10;
 }
