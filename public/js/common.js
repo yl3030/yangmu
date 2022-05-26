@@ -18,17 +18,17 @@ $(".map_floor_pic").click(function(){
     src = $(this).attr("src");
     pic = $(this);
     index = $(".map_floor_pic").index(pic);
-    console.log(index);
     $(".map_floor_popup").fadeIn(300);
     $('body').css("overflow", "hidden");
     $(".map_floor_popup_pic").attr("src",src);
 })
 
 $(".map_floor_popup_arrow").click(function(){
+    pic_next = $(".map_floor").children(".map_floor_pic").eq(index + 1);
+    pic_prev = $(".map_floor").children(".map_floor_pic").eq(index - 1);
     if($(this).hasClass("prev")){
         index--;
         if(index >= 0){
-            pic_prev = $(".map_floor").children(".map_floor_pic").eq(index);
             src = pic_prev.attr("src");
             $(".map_floor_popup_pic").attr("src", src);
         } else {
@@ -37,7 +37,6 @@ $(".map_floor_popup_arrow").click(function(){
     }else if($(this).hasClass("next")){
         index ++;
         if(index < pic_length){
-            pic_next = $(".map_floor").children(".map_floor_pic").eq(index + 1);
             src = pic_next.attr("src");
             $(".map_floor_popup_pic").attr("src", src);
         }else {
