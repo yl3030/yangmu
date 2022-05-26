@@ -35,7 +35,9 @@ input,textarea {
     border: 0;
 }
 
-.container {}
+.pt-20 {
+    padding-top: 20px;
+}
 
 .color {
     &-main {
@@ -515,6 +517,19 @@ main {
             transform: translateX(1px);
         }
     }
+    &_floor {
+        &_pic {
+            width: 20%;
+            cursor: pointer;
+            transition: $transition-main;
+            z-index: 3;
+            &.active {
+                transform: scale(1.3);
+                // background-color: #E9E8E4;
+                animation: large 6s ease-out 0.3s 1;
+            }
+        }
+    }
 }
 
 .apply {
@@ -543,7 +558,7 @@ main {
                     width: 60%;
                     right: 0;
                     top: -27%;
-                    animation: apply-1 4s linear infinite;
+                    animation: apply-1 6.5s ease-out infinite;
                 }
                 &-2 {
                     width: 40%;
@@ -551,14 +566,14 @@ main {
                     top: calc(100% + 15px);
                     transform: none;
                     // bottom: calc(-85% - 15px);
-                    animation: apply-2 4s linear infinite;
+                    animation: apply-2 6.5s ease-out infinite;
                 }
                 &-3 {
                     width: 35%;
                     right: calc(60% + 15px);
                     top: 60%;
                     transform: none;
-                    animation: apply-3 4s linear infinite;
+                    animation: apply-3 6.5s ease-out infinite;
                 }
             }
             img {
@@ -825,8 +840,6 @@ main {
     }
 }
 
-
-
 .brand {
     &_text {
         width: 27%;
@@ -975,6 +988,60 @@ main {
 .footer {
     padding: 10px 20px;
     background-color: #E7DECF;
+}
+
+.fix-side {
+    position: fixed;
+    width: 45px;
+    right: 40px;
+    bottom: 10vw;
+    z-index: 10;
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    li {
+        width: 100%;
+        height: 60px;
+        box-shadow: 0 0 2px rgba(0,0,0,0.2);
+        background-color: $second-color;
+        transition: $transition-main;
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: $transition-main;
+            img {
+                width: 35%;
+                &.icon-fb {
+                    width: 30%;
+                }
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+            span {
+                display: none;
+                text-align: center;
+                margin-top: 3px;
+                width: 100%;
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+        &:hover {
+            // background-color: #a36d2b;
+        }
+        &:first-child {
+            border-radius: 100px 100px 0 0;
+        }
+        &:last-child {
+            border-radius: 0 0 100px 100px;
+        }
+    }
 }
 
 @media screen and (min-width:1400px) {
@@ -1511,6 +1578,39 @@ main {
             margin-top: 150px;
         }
     }
+    .fix-side {
+        width: 100vw;
+        height: 60px;
+        right: 0;
+        bottom: 0;
+        background-color: $second-color;
+        ul {
+            display: flex;
+            li {
+                width: 20%;
+                border-radius: 0 !important;
+                a {
+                    // display: block;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    img {
+                        width: 16px;
+                        display: block;
+                        margin: 0 auto;
+                        &.icon-fb {
+                            width: 11px;
+                        }
+                        &.icon-top {
+                            width: 20px;
+                        }
+                    }
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -1559,6 +1659,12 @@ main {
             }
             &_pt {
                 padding-top: 20px !important;
+            }
+        }
+        &_floor {
+            justify-content: center;
+            &_pic {
+                width: 33.3333%;
             }
         }
     }

@@ -7,6 +7,21 @@ $(".header_item").click(function(){
     $("html,body").animate({ scrollTop: top }, parseInt(300));
 })
 
+$(".btn-top").click(function(){
+    $("html,body").animate({scrollTop: 0}, 300);
+})
+
+$(".map_floor_pic").click(function(){
+    $(this).addClass("active");
+    $(this).siblings(".map_floor_pic").removeClass("active");
+})
+
+$(document).click(function (event) {
+    var area = $(".map_floor_pic");
+    if (!area.is(event.target) && area.has(event.target).length === 0) {
+        $(".map_floor_pic").removeClass("active");
+    }
+});
 
 
 var swiper = new Swiper(".beautiful_swiper", {
